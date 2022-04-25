@@ -1,0 +1,145 @@
+.background {
+  background: url("campus3.jpg")
+    rgba(0, 0, 0, 0.61);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  filter: blur(0px);
+  min-height: 800px;
+}
+
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 120px;
+  text-decoration: underline;
+  text-shadow: 5px 5px #002855;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  margin: 10vh auto;
+  background: transparent;
+  box-shadow: 0 0 15px rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+h2 {
+  margin: 10px;
+  font-size: 50px;
+  color: white;
+}
+
+form {
+  padding: 5px;
+  display: center;
+  flex-direction: column;
+  width: 95%;
+}
+
+.form-item {
+  display: flex;
+  width: 90%;
+  background: transparent;
+  margin: 10px auto;
+  border-radius: 15px;
+  align-items: center;
+  border-bottom: 1px solid rgb(82, 81, 81);
+}
+
+.form-item:hover {
+  border: 1px solid rgb(82, 81, 81);
+}
+
+input {
+  background: transparent;
+  width: 80%;
+  height: 30px;
+  outline: none;
+  border: none;
+  margin: auto;
+  color: white;
+  font-size: 17px;
+}
+
+::placeholder {
+  color: white;
+}
+
+span {
+  user-select: none;
+  margin: 5px;
+  color: white;
+  background: rgba(85, 81, 81, 0.637);
+  padding: 5px;
+  border-radius: 18px;
+}
+
+button[type="submit"] {
+  width: 180px;
+  font-size: 25px;
+  margin: 15px auto;
+  padding: 10px;
+  background: rgba(122, 123, 116, 0.72);
+  border: none;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background: rgb(132, 136, 132);
+}
+
+p:first-of-type {
+  margin: 0;
+}
+
+.options {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  font-size: 18px;
+  padding: 5px 16px;
+  margin: 5px 15px;
+  width: 180px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+p {
+  font-size: 18px;
+  margin: 5px;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: grey;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 90%;
+  }
+}
